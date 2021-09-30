@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 13 - Chat Room</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <div id="container">
+
+        <div id="slider-container">
+            <div id="login-container">
+                <h1>Sembang Kedai Kopi v1.0</h1>
+                <input id='name-input' type="text" placeholder="Please insert your name here!">
+                <button id='btn' onclick="login(-100)">Login</button>
+            </div>
+            
+            <!-- <div id="room-container">
+                <h1>Please select a room to join or create a new one.</h1>
+                <input id='room-input' type="text" placeholder="Create a new room here">
+                <button id='btn' onclick="createRoom()">Join</button>
+                <div id="room-holder"></div>
+            </div> -->
+
+            <div id="chat-container">
+                <div id="chat-header">
+                    <h1>Let's have a "Mengopi" Session</h1>
+                    <button id="btn" onclick="logout(100)">Logout</button>
+                </div>
+                <div id="chat-room"></div>
+                <div id="chat-holder">
+                    <div id="input-holder">
+                        <div id="name-holder">
+                            You are entering chat as 
+             
+                        </div>
+                        <input id="msg-input" type="text" placeholder="Insert your message here">
+                    </div>
+
+                    <button id='btn' onclick="sendMsg()">Send</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    <!-- firebase-app -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>
+    <!-- firebase-real-time -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-database.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>

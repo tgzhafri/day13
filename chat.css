@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scrollbar-width: 10px;
+    scrollbar-color: #888;
+}
+#container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+#slider-container {
+    width: 200vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    transition: all 0.5s ease-in-out;
+}
+#login-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    background-image: url("./images/coffeeshop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#room-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+#room-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;  
+}
+.roomList {
+    width: 200px;
+    height: 100px;
+    background-color: #111;
+    color: whitesmoke;
+}
+#chat-container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/coffee1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#chat-container h1 {
+    text-align: center;
+    padding: 10px;
+    color: whitesmoke;
+}
+#chat-header {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+}
+#chat-room {
+    width: 600px;
+    height: 550px;
+    margin: 0 auto;
+    background-color: skyblue;
+    background-image: linear-gradient(#111, black);
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+
+}
+#chat-holder {
+    width: 600px;
+    height: 100px;
+    background-color: gray;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1rem;
+    padding: 0 20px 20px 20px;
+}
+.chat-box {
+    width: auto;
+    max-width: 300px;
+    height: auto;
+    padding: 10px 20px;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 10px;
+    margin: 10px 10px 0 10px;
+    align-self: flex-start;
+}
+.self {
+    align-self: flex-end;
+    background-color: rgb(46, 46, 236);
+}
+
+#input-holder {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+#name-holder {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    line-height: 15px;
+    font-size: 15px;
+}
+input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+button {
+    width: 100%;
+    max-width: 100px;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+.timeStamp {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+    gap: 0.5rem;
+    font-size: smaller;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* the track */
+::-webkit-scrollbar-track {
+    background-color: lightgray;
+}
+/* the handle */
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+/* handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: gray;
+}
